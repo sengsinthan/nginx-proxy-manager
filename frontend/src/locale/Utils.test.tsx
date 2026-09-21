@@ -97,6 +97,11 @@ describe("getFlagCodeForLocale", () => {
 		expect(getFlagCodeForLocale("et-EE")).toBe("EE");
 	});
 
+	it("returns KH (Cambodia) for Khmer locale, not KM (Comoros)", () => {
+		expect(getFlagCodeForLocale("km")).toBe("KH");
+		expect(getFlagCodeForLocale("km-KH")).toBe("KH");
+	});
+
 	it("falls back to EN when no locale is provided", () => {
 		expect(getFlagCodeForLocale()).toBe("EN");
 		expect(getFlagCodeForLocale(undefined)).toBe("EN");

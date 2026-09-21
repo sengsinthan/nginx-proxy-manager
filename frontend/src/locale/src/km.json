@@ -1,0 +1,785 @@
+{
+	"2fa.backup-codes-remaining": {
+		"defaultMessage": "លេខកូដបម្រុងទុកដែលនៅសល់៖ {count}"
+	},
+	"2fa.backup-warning": {
+		"defaultMessage": "រក្សាទុកលេខកូដបម្រុងទុកទាំងនេះនៅកន្លែងមានសុវត្ថិភាព។ លេខកូដនីមួយៗអាចប្រើបានតែម្តងប៉ុណ្ណោះ។"
+	},
+	"2fa.disable": {
+		"defaultMessage": "បិទការផ្ទៀងផ្ទាត់ពីរជាន់"
+	},
+	"2fa.disable-confirm": {
+		"defaultMessage": "បិទ 2FA"
+	},
+	"2fa.disable-warning": {
+		"defaultMessage": "ការបិទការផ្ទៀងផ្ទាត់ពីរជាន់នឹងធ្វើឱ្យគណនីរបស់អ្នកមានសុវត្ថិភាពតិចជាងមុន។"
+	},
+	"2fa.disabled": {
+		"defaultMessage": "បានបិទ"
+	},
+	"2fa.done": {
+		"defaultMessage": "ខ្ញុំបានរក្សាទុកលេខកូដបម្រុងទុករបស់ខ្ញុំហើយ"
+	},
+	"2fa.enable": {
+		"defaultMessage": "បើកការផ្ទៀងផ្ទាត់ពីរជាន់"
+	},
+	"2fa.enabled": {
+		"defaultMessage": "បានបើក"
+	},
+	"2fa.enter-code": {
+		"defaultMessage": "បញ្ចូលលេខកូដផ្ទៀងផ្ទាត់"
+	},
+	"2fa.enter-code-disable": {
+		"defaultMessage": "បញ្ចូលលេខកូដផ្ទៀងផ្ទាត់ដើម្បីបិទ"
+	},
+	"2fa.regenerate": {
+		"defaultMessage": "បង្កើតឡើងវិញ"
+	},
+	"2fa.regenerate-backup": {
+		"defaultMessage": "បង្កើតលេខកូដបម្រុងទុកឡើងវិញ"
+	},
+	"2fa.regenerate-instructions": {
+		"defaultMessage": "បញ្ចូលលេខកូដផ្ទៀងផ្ទាត់ដើម្បីបង្កើតលេខកូដបម្រុងទុកថ្មី។ លេខកូដចាស់របស់អ្នកនឹងលែងមានសុពលភាព។"
+	},
+	"2fa.secret-key": {
+		"defaultMessage": "សោសម្ងាត់"
+	},
+	"2fa.setup-instructions": {
+		"defaultMessage": "ស្កេនកូដ QR នេះដោយប្រើកម្មវិធីផ្ទៀងផ្ទាត់របស់អ្នក ឬបញ្ចូលសោសម្ងាត់ដោយដៃ។"
+	},
+	"2fa.status": {
+		"defaultMessage": "ស្ថានភាព"
+	},
+	"2fa.title": {
+		"defaultMessage": "ការផ្ទៀងផ្ទាត់ពីរជាន់"
+	},
+	"2fa.verify-enable": {
+		"defaultMessage": "ផ្ទៀងផ្ទាត់ និងបើក"
+	},
+	"access-list": {
+		"defaultMessage": "បញ្ជីសិទ្ធិចូលប្រើ"
+	},
+	"access-list.access-count": {
+		"defaultMessage": "{count} ច្បាប់"
+	},
+	"access-list.auth-count": {
+		"defaultMessage": "{count} អ្នកប្រើប្រាស់"
+	},
+	"access-list.help-rules-last": {
+		"defaultMessage": "នៅពេលមានច្បាប់យ៉ាងតិច ១ ច្បាប់ នោះច្បាប់បដិសេធទាំងអស់នេះនឹងត្រូវបានបន្ថែមជាចុងក្រោយ"
+	},
+	"access-list.help.rules-order": {
+		"defaultMessage": "សូមចំណាំថា ការអនុញ្ញាត និងការបដិសេធនឹងត្រូវបានអនុវត្តតាមលំដាប់ដែលបានកំណត់។"
+	},
+	"access-list.pass-auth": {
+		"defaultMessage": "បញ្ជូនការផ្ទៀងផ្ទាត់ទៅ Upstream"
+	},
+	"access-list.public": {
+		"defaultMessage": "អាចចូលប្រើជាសាធារណៈ"
+	},
+	"access-list.public.subtitle": {
+		"defaultMessage": "មិនតម្រូវឱ្យមានការផ្ទៀងផ្ទាត់មូលដ្ឋានទេ"
+	},
+	"access-list.rule-source.placeholder": {
+		"defaultMessage": "192.168.1.100 ឬ 192.168.1.0/24 ឬ 2001:0db8::/32"
+	},
+	"access-list.satisfy-any": {
+		"defaultMessage": "បំពេញលក្ខខណ្ឌណាមួយ"
+	},
+	"access-list.subtitle": {
+		"defaultMessage": "{users} អ្នកប្រើប្រាស់, {rules} ច្បាប់ - បានបង្កើត៖ {date}"
+	},
+	"access-lists": {
+		"defaultMessage": "បញ្ជីសិទ្ធិចូលប្រើ"
+	},
+	"action.add": {
+		"defaultMessage": "បន្ថែម"
+	},
+	"action.add-location": {
+		"defaultMessage": "បន្ថែមទីតាំង"
+	},
+	"action.allow": {
+		"defaultMessage": "អនុញ្ញាត"
+	},
+	"action.clear": {
+		"defaultMessage": "សម្អាត"
+	},
+	"action.close": {
+		"defaultMessage": "បិទ"
+	},
+	"action.delete": {
+		"defaultMessage": "លុប"
+	},
+	"action.deny": {
+		"defaultMessage": "បដិសេធ"
+	},
+	"action.disable": {
+		"defaultMessage": "បិទដំណើរការ"
+	},
+	"action.download": {
+		"defaultMessage": "ទាញយក"
+	},
+	"action.edit": {
+		"defaultMessage": "កែសម្រួល"
+	},
+	"action.enable": {
+		"defaultMessage": "បើកដំណើរការ"
+	},
+	"action.permissions": {
+		"defaultMessage": "សិទ្ធិ"
+	},
+	"action.renew": {
+		"defaultMessage": "បន្តសុពលភាព"
+	},
+	"action.view-details": {
+		"defaultMessage": "មើលព័ត៌មានលម្អិត"
+	},
+	"auditlogs": {
+		"defaultMessage": "កំណត់ហេតុសវនកម្ម"
+	},
+	"auto": {
+		"defaultMessage": "ស្វ័យប្រវត្តិ"
+	},
+	"cancel": {
+		"defaultMessage": "បោះបង់"
+	},
+	"certificate": {
+		"defaultMessage": "វិញ្ញាបនបត្រ"
+	},
+	"certificate.custom-certificate": {
+		"defaultMessage": "វិញ្ញាបនបត្រ"
+	},
+	"certificate.custom-certificate-key": {
+		"defaultMessage": "សោវិញ្ញាបនបត្រ"
+	},
+	"certificate.custom-intermediate": {
+		"defaultMessage": "វិញ្ញាបនបត្រកម្រិតកណ្តាល"
+	},
+	"certificate.in-use": {
+		"defaultMessage": "កំពុងប្រើ"
+	},
+	"certificate.none.subtitle": {
+		"defaultMessage": "មិនបានកំណត់វិញ្ញាបនបត្រទេ"
+	},
+	"certificate.none.subtitle.for-http": {
+		"defaultMessage": "ម៉ាស៊ីននេះនឹងមិនប្រើ HTTPS ទេ"
+	},
+	"certificate.none.title": {
+		"defaultMessage": "គ្មាន"
+	},
+	"certificate.not-in-use": {
+		"defaultMessage": "មិនបានប្រើ"
+	},
+	"certificate.renew": {
+		"defaultMessage": "បន្តសុពលភាពវិញ្ញាបនបត្រ"
+	},
+	"certificates": {
+		"defaultMessage": "វិញ្ញាបនបត្រ"
+	},
+	"certificates.custom": {
+		"defaultMessage": "វិញ្ញាបនបត្រផ្ទាល់ខ្លួន"
+	},
+	"certificates.custom.warning": {
+		"defaultMessage": "ឯកសារសោដែលការពារដោយឃ្លាសម្ងាត់មិនត្រូវបានគាំទ្រទេ។"
+	},
+	"certificates.dns.credentials": {
+		"defaultMessage": "មាតិកាឯកសារព័ត៌មានសម្ងាត់"
+	},
+	"certificates.dns.credentials-note": {
+		"defaultMessage": "កម្មវិធីជំនួយនេះតម្រូវឱ្យមានឯកសារកំណត់រចនាសម្ព័ន្ធដែលមាន API token ឬព័ត៌មានសម្ងាត់ផ្សេងទៀតសម្រាប់អ្នកផ្តល់សេវារបស់អ្នក"
+	},
+	"certificates.dns.credentials-warning": {
+		"defaultMessage": "ទិន្នន័យនេះនឹងត្រូវបានរក្សាទុកជាអក្សរធម្មតានៅក្នុងមូលដ្ឋានទិន្នន័យ និងនៅក្នុងឯកសារ!"
+	},
+	"certificates.dns.propagation-seconds": {
+		"defaultMessage": "រយៈពេលផ្សព្វផ្សាយ (វិនាទី)"
+	},
+	"certificates.dns.propagation-seconds-note": {
+		"defaultMessage": "ទុកឱ្យនៅទទេដើម្បីប្រើតម្លៃលំនាំដើមរបស់កម្មវិធីជំនួយ។ ចំនួនវិនាទីដែលត្រូវរង់ចាំការផ្សព្វផ្សាយ DNS។"
+	},
+	"certificates.dns.provider": {
+		"defaultMessage": "អ្នកផ្តល់សេវា DNS"
+	},
+	"certificates.dns.provider.placeholder": {
+		"defaultMessage": "ជ្រើសរើសអ្នកផ្តល់សេវា..."
+	},
+	"certificates.dns.warning": {
+		"defaultMessage": "ផ្នែកនេះតម្រូវឱ្យមានចំណេះដឹងខ្លះអំពី Certbot និងកម្មវិធីជំនួយ DNS របស់វា។ សូមពិនិត្យមើលឯកសារណែនាំរបស់កម្មវិធីជំនួយនីមួយៗ។"
+	},
+	"certificates.http.reachability-404": {
+		"defaultMessage": "មានម៉ាស៊ីនមេនៅដែននេះ ប៉ុន្តែវាហាក់ដូចជាមិនមែន Nginx Proxy Manager ទេ។ សូមប្រាកដថាដែនរបស់អ្នកចង្អុលទៅកាន់អាសយដ្ឋាន IP ដែល NPM របស់អ្នកកំពុងដំណើរការ។"
+	},
+	"certificates.http.reachability-failed-to-check": {
+		"defaultMessage": "មិនអាចពិនិត្យមើលការចូលដំណើរការបានទេ ដោយសារមានបញ្ហាទំនាក់ទំនងជាមួយ site24x7.com។"
+	},
+	"certificates.http.reachability-not-resolved": {
+		"defaultMessage": "មិនមានម៉ាស៊ីនមេនៅដែននេះទេ។ សូមប្រាកដថាដែនរបស់អ្នកមានពិតប្រាកដ និងចង្អុលទៅកាន់អាសយដ្ឋាន IP ដែល NPM របស់អ្នកកំពុងដំណើរការ ហើយប្រសិនបើចាំបាច់ សូមបើកការបញ្ជូនបន្តច្រក 80 នៅក្នុងរ៉ោតទ័ររបស់អ្នក។"
+	},
+	"certificates.http.reachability-ok": {
+		"defaultMessage": "ម៉ាស៊ីនមេរបស់អ្នកអាចចូលដំណើរការបាន ហើយការបង្កើតវិញ្ញាបនបត្រគួរតែអាចធ្វើទៅបាន។"
+	},
+	"certificates.http.reachability-other": {
+		"defaultMessage": "មានម៉ាស៊ីនមេនៅដែននេះ ប៉ុន្តែវាបានឆ្លើយតបនឹងលេខកូដស្ថានភាពដែលមិនបានរំពឹងទុក {code}។ តើវាជាម៉ាស៊ីនមេ NPM មែនទេ? សូមប្រាកដថាដែនរបស់អ្នកចង្អុលទៅកាន់អាសយដ្ឋាន IP ដែល NPM របស់អ្នកកំពុងដំណើរការ។"
+	},
+	"certificates.http.reachability-wrong-data": {
+		"defaultMessage": "មានម៉ាស៊ីនមេនៅដែននេះ ប៉ុន្តែវាបានឆ្លើយតបនឹងទិន្នន័យដែលមិនបានរំពឹងទុក។ តើវាជាម៉ាស៊ីនមេ NPM មែនទេ? សូមប្រាកដថាដែនរបស់អ្នកចង្អុលទៅកាន់អាសយដ្ឋាន IP ដែល NPM របស់អ្នកកំពុងដំណើរការ។"
+	},
+	"certificates.http.test-results": {
+		"defaultMessage": "លទ្ធផលសាកល្បង"
+	},
+	"certificates.http.warning": {
+		"defaultMessage": "ដែនទាំងនេះត្រូវតែបានកំណត់រួចហើយឱ្យចង្អុលមកកាន់ការដំឡើងនេះ។"
+	},
+	"certificates.key-type": {
+		"defaultMessage": "ប្រភេទសោ"
+	},
+	"certificates.key-type-description": {
+		"defaultMessage": "RSA មានភាពឆបគ្នាទូលំទូលាយ រីឯ ECDSA លឿនជាង និងមានសុវត្ថិភាពជាង ប៉ុន្តែអាចមិនត្រូវបានគាំទ្រដោយប្រព័ន្ធចាស់ៗ"
+	},
+	"certificates.key-type-ecdsa": {
+		"defaultMessage": "ECDSA 256"
+	},
+	"certificates.key-type-rsa": {
+		"defaultMessage": "RSA 2048"
+	},
+	"certificates.request.subtitle": {
+		"defaultMessage": "ជាមួយ Let's Encrypt"
+	},
+	"certificates.request.title": {
+		"defaultMessage": "ស្នើសុំវិញ្ញាបនបត្រថ្មី"
+	},
+	"column.access": {
+		"defaultMessage": "សិទ្ធិចូលប្រើ"
+	},
+	"column.authorization": {
+		"defaultMessage": "ការអនុញ្ញាត"
+	},
+	"column.authorizations": {
+		"defaultMessage": "ការអនុញ្ញាត"
+	},
+	"column.custom-locations": {
+		"defaultMessage": "ទីតាំងផ្ទាល់ខ្លួន"
+	},
+	"column.destination": {
+		"defaultMessage": "ទិសដៅ"
+	},
+	"column.details": {
+		"defaultMessage": "ព័ត៌មានលម្អិត"
+	},
+	"column.email": {
+		"defaultMessage": "អ៊ីមែល"
+	},
+	"column.event": {
+		"defaultMessage": "ព្រឹត្តិការណ៍"
+	},
+	"column.expires": {
+		"defaultMessage": "ផុតកំណត់"
+	},
+	"column.http-code": {
+		"defaultMessage": "លេខកូដ HTTP"
+	},
+	"column.incoming-port": {
+		"defaultMessage": "ច្រកចូល"
+	},
+	"column.name": {
+		"defaultMessage": "ឈ្មោះ"
+	},
+	"column.protocol": {
+		"defaultMessage": "ពិធីការ"
+	},
+	"column.provider": {
+		"defaultMessage": "អ្នកផ្តល់សេវា"
+	},
+	"column.roles": {
+		"defaultMessage": "តួនាទី"
+	},
+	"column.rules": {
+		"defaultMessage": "ច្បាប់"
+	},
+	"column.satisfy": {
+		"defaultMessage": "លក្ខខណ្ឌ"
+	},
+	"column.satisfy-all": {
+		"defaultMessage": "ទាំងអស់"
+	},
+	"column.satisfy-any": {
+		"defaultMessage": "ណាមួយ"
+	},
+	"column.scheme": {
+		"defaultMessage": "គ្រោងការណ៍"
+	},
+	"column.source": {
+		"defaultMessage": "ប្រភព"
+	},
+	"column.ssl": {
+		"defaultMessage": "SSL"
+	},
+	"column.status": {
+		"defaultMessage": "ស្ថានភាព"
+	},
+	"created-on": {
+		"defaultMessage": "បានបង្កើត៖ {date}"
+	},
+	"dashboard": {
+		"defaultMessage": "ផ្ទាំងគ្រប់គ្រង"
+	},
+	"dead-host": {
+		"defaultMessage": "ម៉ាស៊ីន 404"
+	},
+	"dead-hosts": {
+		"defaultMessage": "ម៉ាស៊ីន 404"
+	},
+	"dead-hosts.count": {
+		"defaultMessage": "{count} ម៉ាស៊ីន 404"
+	},
+	"disabled": {
+		"defaultMessage": "បានបិទ"
+	},
+	"domain-names": {
+		"defaultMessage": "ឈ្មោះដែន"
+	},
+	"domain-names.max": {
+		"defaultMessage": "ឈ្មោះដែនអតិបរមាចំនួន {count}"
+	},
+	"domain-names.placeholder": {
+		"defaultMessage": "ចាប់ផ្តើមវាយបញ្ចូលដើម្បីបន្ថែមដែន..."
+	},
+	"domain-names.wildcards-not-permitted": {
+		"defaultMessage": "មិនអនុញ្ញាតឱ្យប្រើ wildcard សម្រាប់ប្រភេទនេះទេ"
+	},
+	"domain-names.wildcards-not-supported": {
+		"defaultMessage": "មិនគាំទ្រ wildcard សម្រាប់ CA នេះទេ"
+	},
+	"domains.advanced": {
+		"defaultMessage": "កម្រិតខ្ពស់"
+	},
+	"domains.force-ssl": {
+		"defaultMessage": "បង្ខំឱ្យប្រើ SSL"
+	},
+	"domains.hsts-enabled": {
+		"defaultMessage": "បើក HSTS"
+	},
+	"domains.hsts-subdomains": {
+		"defaultMessage": "HSTS សម្រាប់ដែនរង"
+	},
+	"domains.http2-support": {
+		"defaultMessage": "គាំទ្រ HTTP/2"
+	},
+	"domains.trust-forwarded-proto": {
+		"defaultMessage": "ទុកចិត្តបឋមកថា Forwarded Proto ពី Upstream"
+	},
+	"domains.use-dns": {
+		"defaultMessage": "ប្រើការផ្ទៀងផ្ទាត់តាម DNS"
+	},
+	"email-address": {
+		"defaultMessage": "អាសយដ្ឋានអ៊ីមែល"
+	},
+	"empty-search": {
+		"defaultMessage": "រកមិនឃើញលទ្ធផលទេ"
+	},
+	"empty-subtitle": {
+		"defaultMessage": "ហេតុអ្វីអ្នកមិនបង្កើតមួយ?"
+	},
+	"enabled": {
+		"defaultMessage": "បានបើក"
+	},
+	"error.access.at-least-one": {
+		"defaultMessage": "តម្រូវឱ្យមានការអនុញ្ញាតមួយ ឬច្បាប់សិទ្ធិចូលប្រើមួយ"
+	},
+	"error.access.duplicate-usernames": {
+		"defaultMessage": "ឈ្មោះអ្នកប្រើប្រាស់សម្រាប់ការអនុញ្ញាតត្រូវតែមានតែមួយគត់"
+	},
+	"error.invalid-auth": {
+		"defaultMessage": "អ៊ីមែល ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ"
+	},
+	"error.invalid-domain": {
+		"defaultMessage": "ដែនមិនត្រឹមត្រូវ៖ {domain}"
+	},
+	"error.invalid-email": {
+		"defaultMessage": "អាសយដ្ឋានអ៊ីមែលមិនត្រឹមត្រូវ"
+	},
+	"error.max-character-length": {
+		"defaultMessage": "ប្រវែងអតិបរមាគឺ {max} តួអក្សរ"
+	},
+	"error.max-domains": {
+		"defaultMessage": "ដែនច្រើនពេក អតិបរមាគឺ {max}"
+	},
+	"error.maximum": {
+		"defaultMessage": "អតិបរមាគឺ {max}"
+	},
+	"error.min-character-length": {
+		"defaultMessage": "ប្រវែងអប្បបរមាគឺ {min} តួអក្សរ"
+	},
+	"error.minimum": {
+		"defaultMessage": "អប្បបរមាគឺ {min}"
+	},
+	"error.passwords-must-match": {
+		"defaultMessage": "ពាក្យសម្ងាត់ត្រូវតែដូចគ្នា"
+	},
+	"error.required": {
+		"defaultMessage": "តម្រូវឱ្យបំពេញ"
+	},
+	"expires.on": {
+		"defaultMessage": "ផុតកំណត់៖ {date}"
+	},
+	"footer.github-fork": {
+		"defaultMessage": "Fork ខ្ញុំនៅលើ GitHub"
+	},
+	"host.flags.block-exploits": {
+		"defaultMessage": "ទប់ស្កាត់ការវាយប្រហារទូទៅ"
+	},
+	"host.flags.cache-assets": {
+		"defaultMessage": "រក្សាទុក Assets ក្នុងឃ្លាំងសម្ងាត់"
+	},
+	"host.flags.preserve-path": {
+		"defaultMessage": "រក្សាទុកផ្លូវដើម"
+	},
+	"host.flags.protocols": {
+		"defaultMessage": "ពិធីការ"
+	},
+	"host.flags.websockets-upgrade": {
+		"defaultMessage": "គាំទ្រ Websockets"
+	},
+	"host.forward-port": {
+		"defaultMessage": "ច្រកបញ្ជូនបន្ត"
+	},
+	"host.forward-scheme": {
+		"defaultMessage": "គ្រោងការណ៍"
+	},
+	"hosts": {
+		"defaultMessage": "ម៉ាស៊ីន"
+	},
+	"http-only": {
+		"defaultMessage": "HTTP តែប៉ុណ្ណោះ"
+	},
+	"lets-encrypt": {
+		"defaultMessage": "Let's Encrypt"
+	},
+	"lets-encrypt-via-dns": {
+		"defaultMessage": "Let's Encrypt តាម DNS"
+	},
+	"lets-encrypt-via-http": {
+		"defaultMessage": "Let's Encrypt តាម HTTP"
+	},
+	"loading": {
+		"defaultMessage": "កំពុងផ្ទុក…"
+	},
+	"location.advanced-config": {
+		"defaultMessage": "មានការកំណត់រចនាសម្ព័ន្ធ Nginx ផ្ទាល់ខ្លួន"
+	},
+	"location.filter": {
+		"defaultMessage": "ត្រងតាមផ្លូវ ឬទិសដៅ"
+	},
+	"login.2fa-code": {
+		"defaultMessage": "លេខកូដផ្ទៀងផ្ទាត់"
+	},
+	"login.2fa-code-placeholder": {
+		"defaultMessage": "បញ្ចូលលេខកូដ"
+	},
+	"login.2fa-description": {
+		"defaultMessage": "បញ្ចូលលេខកូដពីកម្មវិធីផ្ទៀងផ្ទាត់របស់អ្នក"
+	},
+	"login.2fa-title": {
+		"defaultMessage": "ការផ្ទៀងផ្ទាត់ពីរជាន់"
+	},
+	"login.2fa-verify": {
+		"defaultMessage": "ផ្ទៀងផ្ទាត់"
+	},
+	"login.title": {
+		"defaultMessage": "ចូលទៅគណនីរបស់អ្នក"
+	},
+	"nginx-config.label": {
+		"defaultMessage": "ការកំណត់រចនាសម្ព័ន្ធ Nginx ផ្ទាល់ខ្លួន"
+	},
+	"nginx-config.placeholder": {
+		"defaultMessage": "# បញ្ចូលការកំណត់រចនាសម្ព័ន្ធ Nginx ផ្ទាល់ខ្លួនរបស់អ្នកនៅទីនេះ ដោយទទួលខុសត្រូវដោយខ្លួនឯង!"
+	},
+	"no-permission-error": {
+		"defaultMessage": "អ្នកមិនមានសិទ្ធិមើលវាទេ។"
+	},
+	"notfound.action": {
+		"defaultMessage": "ត្រឡប់ទៅទំព័រដើម"
+	},
+	"notfound.content": {
+		"defaultMessage": "សូមអភ័យទោស រកមិនឃើញទំព័រដែលអ្នកកំពុងស្វែងរកទេ"
+	},
+	"notfound.title": {
+		"defaultMessage": "អូ… អ្នកទើបតែបានរកឃើញទំព័រកំហុស"
+	},
+	"notification.error": {
+		"defaultMessage": "កំហុស"
+	},
+	"notification.object-deleted": {
+		"defaultMessage": "{object} ត្រូវបានលុប"
+	},
+	"notification.object-disabled": {
+		"defaultMessage": "{object} ត្រូវបានបិទ"
+	},
+	"notification.object-enabled": {
+		"defaultMessage": "{object} ត្រូវបានបើក"
+	},
+	"notification.object-renewed": {
+		"defaultMessage": "{object} ត្រូវបានបន្តសុពលភាព"
+	},
+	"notification.object-saved": {
+		"defaultMessage": "{object} ត្រូវបានរក្សាទុក"
+	},
+	"notification.success": {
+		"defaultMessage": "ជោគជ័យ"
+	},
+	"object.actions-title": {
+		"defaultMessage": "{object} #{id}"
+	},
+	"object.add": {
+		"defaultMessage": "បន្ថែម {object}"
+	},
+	"object.delete": {
+		"defaultMessage": "លុប {object}"
+	},
+	"object.delete.content": {
+		"defaultMessage": "តើអ្នកប្រាកដថាចង់លុប {object} នេះមែនទេ?"
+	},
+	"object.edit": {
+		"defaultMessage": "កែសម្រួល {object}"
+	},
+	"object.empty": {
+		"defaultMessage": "មិនមាន {objects} ទេ"
+	},
+	"object.event.created": {
+		"defaultMessage": "បានបង្កើត {object}"
+	},
+	"object.event.deleted": {
+		"defaultMessage": "បានលុប {object}"
+	},
+	"object.event.disabled": {
+		"defaultMessage": "បានបិទ {object}"
+	},
+	"object.event.enabled": {
+		"defaultMessage": "បានបើក {object}"
+	},
+	"object.event.renewed": {
+		"defaultMessage": "បានបន្តសុពលភាព {object}"
+	},
+	"object.event.updated": {
+		"defaultMessage": "បានធ្វើបច្ចុប្បន្នភាព {object}"
+	},
+	"offline": {
+		"defaultMessage": "ក្រៅបណ្តាញ"
+	},
+	"online": {
+		"defaultMessage": "លើបណ្តាញ"
+	},
+	"options": {
+		"defaultMessage": "ជម្រើស"
+	},
+	"password": {
+		"defaultMessage": "ពាក្យសម្ងាត់"
+	},
+	"password.generate": {
+		"defaultMessage": "បង្កើតពាក្យសម្ងាត់ចៃដន្យ"
+	},
+	"password.hide": {
+		"defaultMessage": "លាក់ពាក្យសម្ងាត់"
+	},
+	"password.show": {
+		"defaultMessage": "បង្ហាញពាក្យសម្ងាត់"
+	},
+	"permissions.hidden": {
+		"defaultMessage": "លាក់"
+	},
+	"permissions.manage": {
+		"defaultMessage": "គ្រប់គ្រង"
+	},
+	"permissions.view": {
+		"defaultMessage": "មើលតែប៉ុណ្ណោះ"
+	},
+	"permissions.visibility.all": {
+		"defaultMessage": "ធាតុទាំងអស់"
+	},
+	"permissions.visibility.title": {
+		"defaultMessage": "ការមើលឃើញធាតុ"
+	},
+	"permissions.visibility.user": {
+		"defaultMessage": "តែធាតុដែលបានបង្កើតប៉ុណ្ណោះ"
+	},
+	"proxy-host": {
+		"defaultMessage": "ម៉ាស៊ីន Proxy"
+	},
+	"proxy-host.forward-host": {
+		"defaultMessage": "ឈ្មោះម៉ាស៊ីន / IP បញ្ជូនបន្ត"
+	},
+	"proxy-hosts": {
+		"defaultMessage": "ម៉ាស៊ីន Proxy"
+	},
+	"proxy-hosts.count": {
+		"defaultMessage": "{count} ម៉ាស៊ីន Proxy"
+	},
+	"public": {
+		"defaultMessage": "សាធារណៈ"
+	},
+	"redirection-host": {
+		"defaultMessage": "ម៉ាស៊ីនបញ្ជូនបន្ត"
+	},
+	"redirection-host.forward-domain": {
+		"defaultMessage": "ដែនបញ្ជូនបន្ត"
+	},
+	"redirection-host.forward-http-code": {
+		"defaultMessage": "លេខកូដ HTTP"
+	},
+	"redirection-hosts": {
+		"defaultMessage": "ម៉ាស៊ីនបញ្ជូនបន្ត"
+	},
+	"redirection-hosts.count": {
+		"defaultMessage": "{count} ម៉ាស៊ីនបញ្ជូនបន្ត"
+	},
+	"redirection-hosts.http-code.300": {
+		"defaultMessage": "300 ជម្រើសច្រើន"
+	},
+	"redirection-hosts.http-code.301": {
+		"defaultMessage": "301 បានផ្លាស់ប្តូរជាអចិន្ត្រៃយ៍"
+	},
+	"redirection-hosts.http-code.302": {
+		"defaultMessage": "302 បានផ្លាស់ប្តូរជាបណ្តោះអាសន្ន"
+	},
+	"redirection-hosts.http-code.303": {
+		"defaultMessage": "303 មើលទីតាំងផ្សេងទៀត"
+	},
+	"redirection-hosts.http-code.307": {
+		"defaultMessage": "307 បញ្ជូនបន្តជាបណ្តោះអាសន្ន"
+	},
+	"redirection-hosts.http-code.308": {
+		"defaultMessage": "308 បញ្ជូនបន្តជាអចិន្ត្រៃយ៍"
+	},
+	"role.admin": {
+		"defaultMessage": "អ្នកគ្រប់គ្រង"
+	},
+	"role.standard-user": {
+		"defaultMessage": "អ្នកប្រើប្រាស់ធម្មតា"
+	},
+	"save": {
+		"defaultMessage": "រក្សាទុក"
+	},
+	"setting": {
+		"defaultMessage": "ការកំណត់"
+	},
+	"settings": {
+		"defaultMessage": "ការកំណត់"
+	},
+	"settings.default-site": {
+		"defaultMessage": "គេហទំព័រលំនាំដើម"
+	},
+	"settings.default-site.404": {
+		"defaultMessage": "ទំព័រ 404"
+	},
+	"settings.default-site.444": {
+		"defaultMessage": "គ្មានការឆ្លើយតប (444)"
+	},
+	"settings.default-site.congratulations": {
+		"defaultMessage": "ទំព័រអបអរសាទរ"
+	},
+	"settings.default-site.description": {
+		"defaultMessage": "អ្វីដែលត្រូវបង្ហាញនៅពេល Nginx ទទួលបានសំណើពីម៉ាស៊ីនដែលមិនស្គាល់"
+	},
+	"settings.default-site.html": {
+		"defaultMessage": "HTML ផ្ទាល់ខ្លួន"
+	},
+	"settings.default-site.html.placeholder": {
+		"defaultMessage": "<!-- បញ្ចូលមាតិកា HTML ផ្ទាល់ខ្លួនរបស់អ្នកនៅទីនេះ -->"
+	},
+	"settings.default-site.redirect": {
+		"defaultMessage": "បញ្ជូនបន្ត"
+	},
+	"setup.preamble": {
+		"defaultMessage": "ចាប់ផ្តើមដោយបង្កើតគណនីអ្នកគ្រប់គ្រងរបស់អ្នក។"
+	},
+	"setup.title": {
+		"defaultMessage": "សូមស្វាគមន៍!"
+	},
+	"sign-in": {
+		"defaultMessage": "ចូល"
+	},
+	"ssl-certificate": {
+		"defaultMessage": "វិញ្ញាបនបត្រ SSL"
+	},
+	"stream": {
+		"defaultMessage": "Stream"
+	},
+	"stream.forward-host": {
+		"defaultMessage": "ម៉ាស៊ីនបញ្ជូនបន្ត"
+	},
+	"stream.forward-host.placeholder": {
+		"defaultMessage": "example.com ឬ 10.0.0.1 ឬ 2001:db8:3333:4444:5555:6666:7777:8888"
+	},
+	"stream.incoming-port": {
+		"defaultMessage": "ច្រកចូល"
+	},
+	"streams": {
+		"defaultMessage": "Streams"
+	},
+	"streams.count": {
+		"defaultMessage": "{count} Stream"
+	},
+	"streams.tcp": {
+		"defaultMessage": "TCP"
+	},
+	"streams.udp": {
+		"defaultMessage": "UDP"
+	},
+	"test": {
+		"defaultMessage": "សាកល្បង"
+	},
+	"update-available": {
+		"defaultMessage": "មានកំណែថ្មី៖ {latestVersion}"
+	},
+	"user": {
+		"defaultMessage": "អ្នកប្រើប្រាស់"
+	},
+	"user.change-password": {
+		"defaultMessage": "ប្តូរពាក្យសម្ងាត់"
+	},
+	"user.confirm-password": {
+		"defaultMessage": "បញ្ជាក់ពាក្យសម្ងាត់"
+	},
+	"user.current-password": {
+		"defaultMessage": "ពាក្យសម្ងាត់បច្ចុប្បន្ន"
+	},
+	"user.edit-profile": {
+		"defaultMessage": "កែសម្រួលប្រវត្តិរូប"
+	},
+	"user.full-name": {
+		"defaultMessage": "ឈ្មោះពេញ"
+	},
+	"user.login-as": {
+		"defaultMessage": "ចូលជា {name}"
+	},
+	"user.logout": {
+		"defaultMessage": "ចាកចេញ"
+	},
+	"user.new-password": {
+		"defaultMessage": "ពាក្យសម្ងាត់ថ្មី"
+	},
+	"user.nickname": {
+		"defaultMessage": "ឈ្មោះហៅក្រៅ"
+	},
+	"user.set-password": {
+		"defaultMessage": "កំណត់ពាក្យសម្ងាត់"
+	},
+	"user.set-permissions": {
+		"defaultMessage": "កំណត់សិទ្ធិសម្រាប់ {name}"
+	},
+	"user.switch-dark": {
+		"defaultMessage": "ប្តូរទៅរបៀបងងឹត"
+	},
+	"user.switch-light": {
+		"defaultMessage": "ប្តូរទៅរបៀបភ្លឺ"
+	},
+	"user.two-factor": {
+		"defaultMessage": "ការផ្ទៀងផ្ទាត់ពីរជាន់"
+	},
+	"username": {
+		"defaultMessage": "ឈ្មោះអ្នកប្រើប្រាស់"
+	},
+	"users": {
+		"defaultMessage": "អ្នកប្រើប្រាស់"
+	}
+}

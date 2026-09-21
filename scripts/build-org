@@ -1,0 +1,97 @@
+#!/bin/bash -e
+
+# Builds the org image (frontend + final image) using podman or docker.
+#
+#   ./scripts/build-org            # build linux/amd64, tag only
+#   ./scripts/build-org --push     # build and push to Docker Hub
+#
+# Env overrides:
+#   REGISTRY          registry host               (default: docker.io)
+#   DOCKER_ORG        registry namespace          (default: cmicdev)
+#   IMAGE_NAME        repository name             (default: nginx-proxy-manager)
+#   BUILD_VERSION     image tag                   (default: contents of .version)
+#   PLATFORM          target platform             (default: linux/amd64)
+#   CONTAINER_ENGINE  podman or docker            (default: podman, else docker)
+#   SKIP_FRONTEND     set to 1 to reuse frontend/dist from a previous run
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+. "$DIR/.common.sh"
+
+cd "${DIR}/.." || exit 1
+
+DOCKER_ORG="${DOCKER_ORG:-cmicdev}"
+IMAGE_NAME="${IMAGE_NAME:-nginx-proxy-manager}"
+BUILD_VERSION="${BUILD_VERSION:-$(cat .version)}"
+PLATFORM="${PLATFORM:-linux/amd64}"
+BUILD_IMAGE=nginxproxymanager/nginx-full:certbot-node
+# Fully qualify the registry: podman resolves unqualified names to localhost/,
+# which then cannot be pushed to Docker Hub.
+REGISTRY="${REGISTRY:-docker.io}"
+IMAGE="${REGISTRY}/${DOCKER_ORG}/${IMAGE_NAME}"
+
+if [ -z "$CONTAINER_ENGINE" ]; then
+	if hash podman 2>/dev/null; then
+		CONTAINER_ENGINE=podman
+	elif hash docker 2>/dev/null; then
+		CONTAINER_ENGINE=docker
+	else
+		echo -e "${RED}❯ neither podman nor docker is available${RESET}"
+		exit 1
+	fi
+fi
+
+BUILD_COMMIT="${BUILD_COMMIT:-$(git log -n 1 --format=%h)}"
+
+# Git Bash / MSYS rewrites POSIX paths in arguments, which corrupts container
+# volume specs (/app/frontend becomes a path inside the Git install). Use a
+# Windows-style host path there and turn the rewriting off.
+HOSTPWD="$(pwd)"
+if [ -n "$MSYSTEM" ]; then
+	HOSTPWD="$(pwd -W)"
+	export MSYS2_ARG_CONV_EXCL="*"
+fi
+
+echo -e "${BLUE}❯ ${CYAN}Engine:   ${YELLOW}${CONTAINER_ENGINE}${RESET}"
+echo -e "${BLUE}❯ ${CYAN}Image:    ${YELLOW}${IMAGE}:${BUILD_VERSION}${RESET}"
+echo -e "${BLUE}❯ ${CYAN}Platform: ${YELLOW}${PLATFORM}${RESET}"
+
+# The Dockerfile expects frontend/dist to exist already, so build it first
+# inside the same image CI uses, to keep toolchain versions consistent.
+if [ "$SKIP_FRONTEND" != "1" ]; then
+	echo -e "${BLUE}❯ ${CYAN}Building frontend ...${RESET}"
+	"${CONTAINER_ENGINE}" run --rm \
+		-e CI=true \
+		-e NODE_OPTIONS=--openssl-legacy-provider \
+		-v "${HOSTPWD}/frontend:/app/frontend" \
+		-w /app/frontend "${BUILD_IMAGE}" \
+		sh -c "yarn install --frozen-lockfile && yarn locale-compile && yarn build"
+	echo -e "${BLUE}❯ ${GREEN}Frontend build complete${RESET}"
+fi
+
+if [ ! -d frontend/dist ]; then
+	echo -e "${RED}❯ frontend/dist does not exist, cannot build image${RESET}"
+	exit 1
+fi
+
+echo -e "${BLUE}❯ ${CYAN}Building image ...${RESET}"
+"${CONTAINER_ENGINE}" build \
+	--platform "${PLATFORM}" \
+	--build-arg TARGETPLATFORM="${PLATFORM}" \
+	--build-arg BUILD_VERSION="${BUILD_VERSION}" \
+	--build-arg BUILD_COMMIT="${BUILD_COMMIT}" \
+	--build-arg BUILD_DATE="$(date '+%Y-%m-%d %T %Z')" \
+	-f docker/Dockerfile \
+	-t "${IMAGE}:${BUILD_VERSION}" \
+	-t "${IMAGE}:latest" \
+	.
+
+echo -e "${BLUE}❯ ${GREEN}Built ${IMAGE}:${BUILD_VERSION} and ${IMAGE}:latest${RESET}"
+
+if [ "$1" == "--push" ]; then
+	echo -e "${BLUE}❯ ${CYAN}Pushing ...${RESET}"
+	"${CONTAINER_ENGINE}" push "${IMAGE}:${BUILD_VERSION}"
+	"${CONTAINER_ENGINE}" push "${IMAGE}:latest"
+	echo -e "${BLUE}❯ ${GREEN}Pushed${RESET}"
+else
+	echo -e "${BLUE}❯ ${CYAN}Not pushing. Re-run with ${YELLOW}--push${CYAN} to publish.${RESET}"
+fi

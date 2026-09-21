@@ -24,6 +24,7 @@ import langNo from "./lang/no.json";
 import langUk from "./lang/uk.json";
 import langAz from "./lang/az.json";
 import langFa from "./lang/fa.json";
+import langKm from "./lang/km.json";
 import langList from "./lang/lang-list.json";
 
 // first item of each array should be the language code,
@@ -55,6 +56,7 @@ const localeOptions = [
 	["uk", "uk-UA", langUk],
 	["az", "az-AZ", langAz],
 	["fa", "fa-IR", langFa],
+	["km", "km-KH", langKm],
 ];
 
 const loadMessages = (locale?: string): typeof langList & typeof langEn => {
@@ -82,6 +84,7 @@ const getFlagCodeForLocale = (locale?: string) => {
 		et: "ee", // Estonia (ISO 3166-1). "et" as a country code would be Ethiopia.
 		uk: "ua", // Ukraine
 		fa: "ir", // Iran (Persian)
+		km: "kh", // Cambodia (Khmer)
 	};
 
 	if (specialCases[thisLocale]) {
